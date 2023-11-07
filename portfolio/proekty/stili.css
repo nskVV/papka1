@@ -1,0 +1,84 @@
+#obertka{
+    background-color: #82c288;
+    max-width: 500px;
+}
+
+#display, #display1, #display2, #display3, #display4 {
+    height: 40px;
+    background-color: #fff;
+    font-size: 30px;
+}
+
+#display {
+    /* width: 95%; */
+    width: 475px;
+}
+
+#display1, #display3 {
+    /* width: 40%; */
+    width: 200px;
+}
+
+#display2 {
+    /* width: 9%; */
+    width: 25px;
+    text-align: center;
+}
+
+#display4 {
+    /* width: 35%; */
+    width: 175;
+}
+
+.bloki{
+    padding: 15px 5px;
+    text-align: center;
+}
+
+#r2 .knopki{
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+}
+
+#odin, #dva, #tri, #cetire, #pyat, #sest, #sem, #vosem, #devat, #nol{
+    background-color: #6495ed;
+}
+
+.arifm{
+    background-color: #bdb76b;
+}
+
+/* #plus, #minus, #umnojit, #delit{
+    background-color: #bdb76b;
+} */
+
+#pamIz{
+    height: 40px;
+    background-color: #a961ec;
+}
+
+#pam{
+    height: 35px;
+}
+
+#r3 button{
+    height: 40px;
+    background-color: #fca788;
+}
+
+#resit{
+    height: 40px;
+    font-weight: bold;
+    background-color: #ee5d5d;
+}
+
+#pamV{
+    height: 40px;
+    background-color: #095df8;
+}
+
+span{
+    font-size: 30px;
+    font-weight: bold;
+}

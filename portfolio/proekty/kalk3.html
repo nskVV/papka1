@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stili.css">
+    <title>Практическое задание № 3</title>
+</head>
+<body>
+  <h1>Практическое задание № 3 «Калькулятор на JavaScript»</h1>
+      <script src="kalk3.js"></script>
+
+    <h2>Калькулятор 3</h2>
+    <div id="obertka">
+        <div id="r1" class="bloki">
+            <p>
+                <input type="radio" name="elem" id='pervoe' value="1" checked>
+                число 1 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="elem" id='vtoroe' value="3">число 2
+            </p>
+            <input type="text" id="display1">
+            <input id="display2">
+            <input id="display3"><br><br>
+            <span> = </span>
+            <input id="display4" readonly>
+        </div>
+        <div id="r2" class="bloki">
+            <button id="odin" class="knopki" onclick='funcCislo(1)'> 1 </button>
+            <button id="dva" class="knopki" onclick='funcCislo(2)'> 2 </button>
+            <button id="tri" class="knopki"  onclick='funcCislo(3)'> 3 </button>
+            <button id="cetire" class="knopki" onclick='funcCislo(4)'> 4 </button>
+            <button id="pyat" class="knopki"  onclick='funcCislo(5)'> 5 </button>
+            <br>
+            <button id="sest" class="knopki"  onclick='funcCislo(6)'> 6 </button>
+            <button id="sem" class="knopki"  onclick='funcCislo(7)'> 7 </button>
+            <button id="vosem" class="knopki"  onclick='funcCislo(8)'> 8 </button>
+            <button id="devat" class="knopki"  onclick='funcCislo(9)'> 9 </button>
+            <button id="nol" class="knopki"  onclick='funcCislo(0)'> 0 </button>
+            <br>
+            <button id="zap" class="knopki"  onclick='funcCislo(".")'> , </button>
+            <button class="knopki arifm" title="прибавить" onclick='funcArifmOp("+")'> + </button>
+            <button class="knopki arifm" title="отнять" onclick='funcArifmOp("-")'> - </button>
+            <button class="knopki arifm" title="умножить" onclick='funcArifmOp("*")'> x </button>
+            <button class="knopki arifm" title="поделить" onclick='funcArifmOp("/")'> : </button>
+        </div>
+        <div id="r3" class="bloki">
+            <button id="pamIz" name="vstavit" onclick='funcIzPam()'>
+                Вставить из памяти калькулятора
+            </button>
+            <input type="text" id="pam">
+        </div>
+        <div id="r3" class="bloki">
+            <button id="ubr1" name="znakOdin" onclick='funcUdZnak()'>Убрать знак справа</button>
+            <button id="ubrVse" name="znakVse" onclick='funcOcistit()'>Очистить</button>
+        </div>
+        <div id="r4" class="bloki">
+            <button id="resit" name="itog" onclick='funcRascet()'>Вычислить</button>
+            <button id="pamV" name="zapomni"  onclick='funcVpam()'>Занести результат в память калькулятора</button>
+        </div>
+    </div>
+    <!-- <script src="kalk3.js"></script> -->
+    <br><br>
+</body>
+</html>
