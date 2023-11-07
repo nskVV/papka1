@@ -21,6 +21,10 @@ max-width: 200px;
 height: auto;
 }
 
+.im{
+    text-align: center;
+}
+
 span{
     background-color: coral;
 }
