@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="vue.js"></script>
+    <link rel="stylesheet" href="vue.css">
+    <title>Vue_изучение</title>
+</head>
+<body>
+    <main>
+        <h3>Практическое задание № 4 «Приложение Список дел»</h3>
+        <div>Список дел:</div>
+        <div id="app">
+            <!-- <button v-on:click="todoList.splice(index, 1)">Удалить</button> -->
+            <ul>
+                <li v-for="(todo, index) in todoList">
+                    <!-- <input type="checkbox" name="chek" value=`v-for:="index in todoList"`> -->
+                    <p>
+                        {{ index + 1}} ) {{ todo.text }}
+                        <button title="удалить" v-on:click="todoList.splice(index, 1)">х</button>
+                    </p>
+                </li>
+            </ul>
+                <input type="text" v-model="item" placeholder="Новое дело">
+                <button v-on:click="addItem">В список</button>
+        </div>
+    </main>
+</body>
+</html>
